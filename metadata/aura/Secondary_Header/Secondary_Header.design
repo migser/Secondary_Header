@@ -1,0 +1,10 @@
+<design:component>
+    <design:attribute name="header1" label="Label 1" description="Label for field 1" />
+	<design:attribute name="field1" label="Field 1" description="Api name of field 1" />
+    
+    <design:attribute name="header2" label="Label 2" description="Label for field 2" />
+	<design:attribute name="field2" label="Field 2" description="Api name of field 2" />
+    
+    <design:attribute name="header3" label="Label 3" description="Label for field 3" />
+	<design:attribute name="field3" label="Field 3" description="Api name of field 3" />
+</design:component>

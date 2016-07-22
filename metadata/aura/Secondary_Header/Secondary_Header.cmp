@@ -1,0 +1,43 @@
+<aura:component implements='flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName' access="global" controller="Secondary_Header">
+        <!--internal attributes-->
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="sObjectName" type="string"/>
+    
+        <!--design attributes-->
+    <aura:attribute name="header1" type="string" required="true" default="Header 1"/>
+    <aura:attribute name="field1" type="string" required="true" default="Field1__c"/>
+    
+    <aura:attribute name="header2" type="string" required="true" default="Header 2"/>
+    <aura:attribute name="field2" type="string" required="true" default="Field2__c"/>
+    
+    <aura:attribute name="header3" type="string" required="true" default="Header 3"/>
+    <aura:attribute name="field3" type="string" required="true" default="Field3__c"/>
+    
+    <!-- Attributes -->
+    <aura:attribute name="field1_data" type="string"/>
+    
+    <aura:attribute name="field2_data" type="string"/>
+    
+    <aura:attribute name="field3_data" type="string"/>
+    
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    
+	<div class="slds-page-header" role="banner">
+<ul class="slds-grid slds-page-header__detail-row">
+    <li class="slds-col--padded slds-grid--align-space">
+      <p class="slds-text-heading--label slds-truncate" title="Field 1">{!v.header1}</p>
+      <p class="slds-text-body--regular slds-truncate" title="Desc">{!v.field1_data}</p>
+    </li>
+    <li class="slds-col--padded slds-grid--align-space">
+      <p class="slds-text-heading--label slds-truncate" title="Field 2">{!v.header2}</p>
+      <p class="slds-text-body--regular slds-truncate" title="Desc">{!v.field2_data}</p>
+    </li>
+        <li class="slds-col--padded slds-grid--align-space">
+      <p class="slds-text-heading--label slds-truncate" title="Field 3">{!v.header3}</p>
+      <p class="slds-text-body--regular slds-truncate" title="Desc">{!v.field3_data}</p>
+    </li>
+</ul>
+
+    </div>
+</aura:component>
